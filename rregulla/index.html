@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rregulla | Trebeshina Honey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../images/logo3.png">
+    <link rel="stylesheet" href="../style-homepage.css">
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+    .qenderat {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .fusha {
+        flex-grow: 1;
+        padding: 20px 50px;
+        gap: 80px;
+        margin-bottom: 100px;
+    }
+    .fundet {
+        margin-top: auto;
+    }
+    @media (max-width:300px){
+        .fusha{
+            padding:20px 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="qender qenderat">
+    <div class="navbar">
+        <div class="logo">
+            <a href="../"> <img src="../images/d-world_language_logo-removebg-preview.png" alt="logo" class="imazh-logo"></a>
+        </div>
+        <div class="nav">
+            <div class="kontakt">
+                <div class="cel">
+                    <p><i class="fas fa-phone"></i>+355699953697</p>
+                    <p><i class="fas fa-envelope"></i> <span>trebeshinahoney@gmail.com</span></p>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/trebeshina_honey?utm_source=qr&igsh=MXNyc2lhcnEybHRuYQ==" target="_blank"><i class="fab fa-instagram" style="color:black"></i></a>
+                    <a href="https://wa.me/+355699953697" target="_blank"><i class="fab fa-whatsapp" style="color:black"></i></a>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../historia"><b>HISTORIA JONE</b></a></li>
+                <li><a href="../produkte"><b>PRODUKTET</b></a></li>
+                <li><a href="../galeria"><b>GALERIA</b></a></li>
+                <li><a href="../kontakti"><b>KONTAKTI</b></a></li>
+                <hr class="vije">
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class=" bar"></span>
+            </div>
+        </div>
+        <div class="boshlek"></div>
+    </div>
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const kontakt = document.querySelector(".kontakt");
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    kontakt.classList.toggle("active");
+}
+function closeMenu(event) {
+    if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+        if (navMenu.classList.contains("active")) {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+            kontakt.classList.remove("active");
+        }
+    }
+}
+hamburger.addEventListener("click", mobileMenu);
+document.addEventListener("click", closeMenu);
+document.addEventListener("touchstart", closeMenu);
+document.addEventListener("scroll",closeMenu);
+    </script>
+   <div class="fusha">
+    <div class="pagesa" id="pagesat">
+        <h2 class="rregull-titull">Menyra pagese</h2>
+        <p class="rregull-tekst">Pagesa juaj mund të kryhet në një nga mënyrat e mëposhtme:<br>
+            Para në dorëzim <br>
+            Depozita në llogarinë bankare: <br>
+            BKT IBAN: AL882021134300000000001614477<br>
+            Në rast të zgjedhjes së depozitimit në një llogari bankare, shuma duhet të depozitohet brenda 2 
+            ditëve pune nga data e porosisë, në të kundërt porosia anulohet automatikisht. Në justifikimin e depozitës, 
+            shkruani emrin tuaj ose numrin e porosisë. Çdo tarifë e transfertës bankare është përgjegjësia juaj. 
+            Ju mund të na dërgoni vërtetimin e depozitës në trebeshinahoney@gmail.com</p>
+    </div>
+    <div class="transporti" id="transporti">
+        <h2 class="rregull-titull">Transporti</h2>
+        <p class="rregull-tekst"> Mjalti trebeshina dhe produktet e bletës dërgohen në të gjithë Shqiperine. <br>
+            Kostoja e transportit është 300 ALL ne rrethe dhe 100 ALL ne Tirane. <br>
+            Për dërgesat në Kosove dhe shtete te tjera, na kontaktoni në mënyrë që të mund të regjistrojmë porosinë tuaj 
+            dhe t'ju informojmë për kostot e transportit.</p>
+    </div>
+    <div class="rikthimi" id="rikthimi">
+        <h2 class="rregull-titull">Rikthimi</h2>
+        <p class="rregull-tekst">Pas marrjes së produkteve, nuk pranohen kthime apo rimbursime. <br>
+           Nëse paketa e dorëzuar tek ju është e dëmtuar, atëherë duhet ta raportoni menjëherë te kompania e korrierit.
+           Ne nuk mbajmë asnjë përgjegjësi për dëmtimin e paketimit të transportit.</p>
+    </div>
+   </div>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+                else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("DOMContentLoaded", reveal);
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("resize", reveal);
+        window.addEventListener("orientationchange", function() {
+            setTimeout(reveal, 10);
+        });
+    </script>
+    <div class="fundet">
+    <div class="fundi1">
+        <h5>FERMA TREBESHINA,<br>PODGORANE-FUSHE, SUKE<br>PERMET, SHQIPERI</h5>
+        <img src="../images/d-world_language_logo-removebg-preview.png" alt="logo" class="logo-fundi">
+        <h5>TEL: +355699953697<br>EMAIL: trebeshinahoney@gmail.com</h5>
+    </div>
+    <button class="scroll-to-top" onclick="scrollToTop()"> &#8593;</button>
+    <div class="fundi2">
+        <img src="../images/natural.jpeg" alt="natural" class="imazh-natural">
+        <div class="rregulla">
+            <ul>
+                <li><a href="#pagesat"><b>PAGESAT</b></a></li>
+                <li><a href="#transporti"><b>TRANSPORT</b></a></li>
+                <li><a href="#rikthimi"><b>RIKTHIMI</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="vija-fundit">
+    <div class="fundi3">
+        <p class="copyright">COPYRIGHT © <span id="year"></span> | All right reserved Ferma Trebeshina </p>
+    </div>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('year').textContent = currentYear;
+    </script>
+</div>
+    <script>
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    </div>
+</body>
+</html>
