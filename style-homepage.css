@@ -1409,7 +1409,8 @@ a {
         align-items: center;
     }
     #emailError{
-        width: 200px;
+        width: 250px;
+        margin-left: 20px;
     }
     .lajm-kontakt{
         margin-left:-105px;
