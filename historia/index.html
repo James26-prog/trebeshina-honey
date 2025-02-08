@@ -275,6 +275,10 @@ document.addEventListener("scroll",closeMenu);
         </a></div>
     </div>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            resizeContent();
+        });
+        window.addEventListener('resize', resizeContent);
         function resizeContent() {
             const fillimi = document.querySelector('.fillimi1');
             const img = fillimi.querySelector('.fill-img1'); // Adjusted selector
@@ -290,22 +294,17 @@ document.addEventListener("scroll",closeMenu);
                 heading.style.fontSize = '52px';
             }
         }
-        window.addEventListener('resize', resizeContent);
-        window.addEventListener('load', resizeContent);
         function adjustViewportHeight() {
-    const container = document.querySelector('.fillimi1');
-    const stableHeight = document.documentElement.clientHeight; // Prevents changes on scroll
-
-    if (window.matchMedia('(min-width: 850px)').matches) {
-        container.style.height = `${stableHeight - 110}px`;
-    } else {
-        container.style.height = `${stableHeight - 85}px`;
-    }
-}
-
-adjustViewportHeight();
-window.addEventListener('resize', adjustViewportHeight);
-
+            const container = document.querySelector('.fillimi1');
+            const stableHeight = document.documentElement.clientHeight; // Prevents changes on scroll
+            if (window.matchMedia('(min-width: 850px)').matches) {
+                container.style.height = `${stableHeight - 110}px`;
+            } else {
+                container.style.height = `${stableHeight - 85}px`;
+            }
+        }
+        adjustViewportHeight();
+        window.addEventListener('resize', adjustViewportHeight);
     </script>
     <div class="background-container2">
     <div class="containers2 reveal" id="k1">
