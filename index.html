@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <title>Trebeshina Honey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo3.png">
+    <link rel="stylesheet" href="style-homepage.css">
+</head>
+<body>
+<div class="qender">
+    <div class="navbar">
+        <div class="logo">
+            <a href=""> <img src="images/d-world_language_logo-removebg-preview.png" alt="logo" class="imazh-logo"></a>
+        </div>
+        <div class="nav">
+            <div class="kontakt">
+                <div class="cel">
+                    <p><i class="fas fa-phone"></i>+355699953697</p>
+                    <p><i class="fas fa-envelope"></i> <span>trebeshinahoney@gmail.com</span></p>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/trebeshina_honey?utm_source=qr&igsh=MXNyc2lhcnEybHRuYQ==" target="_blank"><i class="fab fa-instagram" style="color:black"></i></a>
+                    <a href="https://wa.me/+355699953697" target="_blank"><i class="fab fa-whatsapp" style="color:black"></i></a>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="historia/"><b>HISTORIA JONE</b></a></li>
+                <li><a href="produkte/"><b>PRODUKTET</b></a></li>
+                <li><a href="galeria/"><b>GALERIA</b></a></li>
+                <li><a href="kontakti/"><b>KONTAKTI</b></a></li>
+                <hr class="vije">
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class=" bar"></span>
+            </div>
+        </div>
+        <div class="boshlek"></div>
+    </div>
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const kontakt = document.querySelector(".kontakt");
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    kontakt.classList.toggle("active");
+}
+
+function closeMenu(event) {
+    if (
+        !hamburger.contains(event.target) && 
+        !navMenu.contains(event.target) && 
+        !kontakt.contains(event.target) // Prevent closing if clicking inside kontakt
+    ) {
+        if (navMenu.classList.contains("active")) {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+            kontakt.classList.remove("active");
+        }
+    }
+}
+hamburger.addEventListener("click", mobileMenu);
+document.addEventListener("click", closeMenu);
+document.addEventListener("touchstart", closeMenu);
+//document.addEventListener("scroll",closeMenu);
+    </script>
+    <div class="background">
+        <div class="img-backgroung reveal ">
+        <img src="images/hexagon.png" alt="hexagons" class="background-img">   
+        <img src="images/hexagon2.png" alt="hexagons" class="background-img">
+       </div>
+        <div class="homepage-start reveal">
+            <img class="big-logo reveal fade-right" src="images/d-world_language_logo-removebg-preview.png" alt="logo">
+            <h2 class="slogan reveal fade-left">Mjaltë i pastër me cilësi dhe vlera ushqyese shume të Larte nga fshati Fushe-Podgoran ne Permet qe nga viti 1975 Shijoni mjaltin në formën e tij më autentike!</h2>
+        </div>
+    </div>
+</div>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 200;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("DOMContentLoaded", reveal);
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("resize", reveal);
+        window.addEventListener("orientationchange", function() {
+            setTimeout(reveal, 10);
+        });
+    </script>
+    <div class="kutite reveal">
+        <div class="family reveal">
+            <img src="images/Untitled_design__2_-removebg-preview.png" alt="logo">
+            <h2 class="h2-kuti">Familja jone</h2>
+            <p class="p-kuti">Familja jonë është aktive në bletari që nga viti 1970. 
+            E nisëm me dashurinë për natyrën dhe pasionin për bletarinë 
+            dhe vazhdojmë të njëjtën gjë të pastër, natyrale dhe organike.</p>
+        </div>
+        <div class="blete reveal">
+            <img src="images/Untitled_design__4_-removebg-preview.png" alt="logo">
+            <h2 class="h2-kuti">Produkte biologjike</h2>
+            <p class="p-kuti">Ne prodhojme mjaltë dhe pelte mbretërore: 
+                të gjitha të certifikuara organike dhe plotësisht të papërpunuara, 
+                direkt nga kosherja në kavanoz, që nga viti 1970.</p>
+        </div>
+    </div>
+    <div class="qender">
+     <div class="historia reveal fade-bottom">
+        <div class="hexagon-container">
+            <img src="images/Untitled_design__1_-removebg-preview.png" alt="hexagon" class="hexagon" id="hexagon">
+            <div class="teksti">
+                <h2 class="histori">Historia Jone</h2>
+                <p class="histori-paragraf">Familja jonë ka një traditë të gjatë në mbarështimin e bletëve, që daton që 
+                    nga vitet 1970. Kjo trashëgimi e vyer është përçuar brez pas brezi, dhe tani ne jemi brezi i dytë i 
+                    bletarëve në familjen tonë. Me një përkushtim të veçantë ndaj këtij zanati, kombinuar me njohuri,
+                    pasion të pashtershëm dhe respekt për bletën, ne vazhdojmë të prodhojmë mjaltin më të 
+                    pastër dhe cilësor nga shpatet e egra malore të Përmetit ku bletët tona punojnë për 
+                    të krijuar një produkt të vërtetë të natyrës.</p>
+                <div class="link1">
+                <a href="historia/">
+                <img src="images/download-removebg-preview (1).png" alt="arrow" class="arrow">Lexoni me shume</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div style="height:200px;"></div>
+    <script>
+document.addEventListener('scroll', function() {
+    var hexagon = document.getElementById('hexagon');
+    var teksti = document.querySelector('.teksti');
+    var rect = hexagon.getBoundingClientRect();
+    var windowHeight = window.innerHeight;
+    if (rect.top < windowHeight && rect.bottom >= 0) {
+        hexagon.style.transform = 'rotate(360deg)';
+        hexagon.addEventListener('transitionend', function() {
+            teksti.style.opacity = 1;
+        }, { once: true });
+    }
+});
+function adjustFontSize() {
+        var isMobile = /Mobi|Android/i.test(navigator.userAgent);
+        var historiParagraf = document.querySelector('.teksti .histori-paragraf');
+        
+        if (isMobile && window.innerWidth > 680) {
+            historiParagraf.style.fontSize = '18px';
+        } else {
+            historiParagraf.style.fontSize = '21px';
+        }
+    }
+    window.addEventListener('resize', adjustFontSize);
+    window.addEventListener('load', adjustFontSize);
+    </script> 
+    <div class="titulli-produkti1 reveal mjalte" style="margin-top: -80px;">
+        <h1 class="titull-produkti">VETITE UNIKE TE PRODUKTIT TE BLETEVE</h1></div>
+        <div class="vetite reveal">
+        <h2 class="vlera-tlarta">Produkt me vlera te larta ushqyese</h2>
+        <img src="images/mjalte.png" alt="vazo-mjalte" class="vetit-img">
+        <div class="lista">
+            <div class="li">
+                <img src="images/Untitled_design__3_-removebg-preview.png" alt="tick"><p>
+                    Antibakterial dhe antiseptik: Mjalti ka veti natyrale antibakteriale dhe antiseptike, duke e bërë të 
+                    dobishëm për shërimin e plagëve dhe infeksioneve të lëkurës.</p><br>
+            </div>
+            <div class="li">
+                <img src="images/Untitled_design__3_-removebg-preview.png" alt="tick"><p>
+                    Mjalti është i pasur me antioksidantë që luajnë një rol kyç në mbrojtjen e trupit nga dëmtimet 
+                    oksidative të shkaktuara nga radikalet e lira, duke kontribuar kështu në parandalimin e sëmundjeve 
+                    kronike dhe plakjes së parakohshme.</p><br>
+            </div>
+            <div class="li">
+                <img src="images/Untitled_design__3_-removebg-preview.png" alt="tick"><p>
+                    Mjalti është një përbërës i vlefshëm në produktet kozmetike, ku përdoret për vetitë e tij ushqyese 
+                    dhe hidratuese, duke ndihmuar në ruajtjen e lagështisë dhe butësisë së lëkurës dhe flokëve, si dhe 
+                    në përmirësimin e elasticitetit të tyre.</p><br>
+            </div>
+            <div class="li">
+                <img src="images/Untitled_design__3_-removebg-preview.png" alt="tick"><p>
+                    Ndihmon në tretje: Konsumi i mjaltit mund të përmirësojë funksionin e tretjes dhe të ndihmojë në 
+                    lehtësimin e problemeve si refluksi i acidit dhe ulçera. </p><br>
+            </div>
+        </div>
+    </div>
+    <div style="height:80px;"></div>
+    <div class="titulli-produkti1 reveal">
+    <h1 class="titull-produkti">PRODUKTET TONA</h1></div>
+    <div class="qender2">
+    <div class="produktet reveal">
+        <div class="scroll-container">
+            <button class="scroll-button" id="scroll-left"><img src="images/download-removebg-preview (1).png" class="left" alt="left"></button>
+            <div class="scroll-wrapper">
+                <div class="scroll-content">
+                    <!-- Add your items here -->
+                    <div class="scroll-item">
+                        <a href="produkte#mjalt" class="scroll-item-link">
+                            <img src="images/honey.png" alt="mjalt" class="honey">
+                            <h5 class="texti-1liter">MJALTE SHUMELULESHE 1L</h5>
+                            <p class="cmimi">2000 ALL</p>
+                        </a>
+                    </div>
+                    <div class="scroll-item">
+                        <a href="produkte#propolis" class="scroll-item-link">
+                        <img src="images/propolis-removebg-preview (1).png" alt="mjalt" class="honey">
+                        <h5 class="texti-1liter">PROPOLIS 10Gr</h5>
+                        <p class="cmimi">800 ALL</p>
+                        </a>
+                    </div>
+                    <div class="scroll-item">
+                        <a href="produkte#krem" class="scroll-item-link">
+                        <img src="images/krem_dylli-removebg-preview.png" alt="mjalt" class="honey">
+                        <h5 class="texti-1liter">KREM DYLLI 75Gr</h5>
+                        <p class="cmimi">700 ALL</p>
+                        </a>
+                    </div>
+                    <div class="scroll-item">
+                        <a class="scroll-item-link">
+                        <img src="images/d-world_language_logo-removebg-preview.png" alt="mjalt" class="honey">
+                        <h5 class="texti-1liter">COMING SOON...</h5>
+                        </a>
+                    </div>
+                    <div class="scroll-item">
+                        <a href="produkte#mjalt" class="scroll-item-link">
+                        <img src="images/honey.png" alt="mjalt" class="honey">
+                        <h5 class="texti-1liter">MJALTE SHUMELULESHE 1L</h5>
+                        <p class="cmimi">2000 ALL</p>
+                        </a>
+                    </div> <!-- Duplicate -->
+                    <div class="scroll-item">
+                        <a href="produkte#propolis" class="scroll-item-link">
+                        <img src="images/propolis-removebg-preview (1).png" alt="mjalt" class="honey">
+                        <h5 class="texti-1liter">PROPOLIS 10Gr</h5>
+                        <p class="cmimi">800 ALL</p>
+                        </a>
+                    </div> <!-- Duplicate -->
+                    <div class="scroll-item">
+                        <a href="produkte#krem" class="scroll-item-link">
+                        <img src="images/krem_dylli-removebg-preview.png" alt="mjalt" class="honey">
+                        <h5 class="texti-1liter">KREM DYLLI 75Gr</h5>
+                        <p class="cmimi">700 ALL</p>
+                        </a>
+                    </div> <!-- Duplicate -->
+                    <div class="scroll-item">
+                        <a class="scroll-item-link">
+                        <img src="images/d-world_language_logo-removebg-preview.png" alt="mjalt" class="honey">
+                        <h5 class="texti-1liter">COMING SOON...</h5>
+                        </a>
+                    </div> <!-- Duplicate -->
+                </div>
+            </div>
+            <button class="scroll-button" id="scroll-right"><img src="images/download-removebg-preview (1).png" class="right" alt="right"></button>
+        </div>
+    </div>
+    </div>
+    <div class="text-box">
+        <a href="#" id="whatsapp-link" class="btn btn-white btn-animate">Per porosi klikoni ketu</a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const phoneNumber = '+355699953697';
+            const message = 'Pershendetje desha te porosise';
+            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            const linkElement = document.getElementById('whatsapp-link');
+            linkElement.href = whatsappLink;
+        });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const scrollContainer = document.querySelector('.scroll-content');
+    const scrollLeftButton = document.getElementById('scroll-left');
+    const scrollRightButton = document.getElementById('scroll-right');
+    const containerWidth = document.querySelector('.scroll-wrapper').offsetWidth;
+    const itemCount = document.querySelectorAll('.scroll-item').length;
+    const getItemWidth = () => {
+        if (window.matchMedia('(max-width: 425px)').matches) {
+            return window.matchMedia('(max-width: 386px)').matches ? 300 + 24 : 360 + 24;
+        } else if (window.matchMedia('(max-width: 480px)').matches) {
+            return 410 + 24;
+        } else {
+            return 420 + 24; 
+        }
+    };
+    let itemWidth = getItemWidth();
+    let totalScrollWidth = itemWidth * itemCount;
+    let scrollAmount = 0;
+    const updateWidths = () => {
+        const previousItemWidth = itemWidth; 
+        itemWidth = getItemWidth(); 
+        totalScrollWidth = itemWidth * itemCount;
+        scrollAmount = (scrollAmount / previousItemWidth) * itemWidth;
+        scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+    };
+    let isScrolling = false; 
+const scrollContent = (direction) => {
+    if (isScrolling) return; 
+    isScrolling = true; 
+    const scrollStep = itemWidth;
+    const maxScroll = totalScrollWidth / 2;
+    if (direction === 'left') {
+        if (scrollAmount > 0) {
+            scrollAmount = Math.max(0, scrollAmount - scrollStep);
+        } else {
+            scrollAmount = maxScroll; 
+            scrollContainer.style.transition = 'none'; 
+            scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+            setTimeout(() => {
+                scrollAmount -= scrollStep;
+                scrollContainer.style.transition = 'transform 0.3s ease-in-out';
+                scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+            }, 50);
+        }
+    } else {
+        if (scrollAmount < maxScroll) {
+            scrollAmount = Math.min(maxScroll, scrollAmount + scrollStep);
+        } else {
+            scrollAmount = 0; 
+            scrollContainer.style.transition = 'none'; 
+            scrollContainer.style.transform = `translateX(0px)`;
+            setTimeout(() => {
+                scrollAmount += scrollStep;
+                scrollContainer.style.transition = 'transform 0.3s ease-in-out';
+                scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+            }, 50);
+        }
+    }
+    scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+    setTimeout(() => {
+        isScrolling = false;
+    }, 300); 
+};
+    scrollLeftButton.addEventListener('click', () => scrollContent('left'));
+    scrollRightButton.addEventListener('click', () => scrollContent('right'));
+    window.addEventListener('resize', updateWidths);
+});
+    </script>
+    <div class="qender">
+    <div class="hexagon-fundi">
+        <img src="images/hexagon.png" alt="fundi-imazh" class="fundi-imazh">
+        <img src="images/hexagon2.png" alt="fundi-imazh" class="fundi-imazh">
+    </div>
+    <div class="fundi1">
+        <h5>FERMA TREBESHINA,<br>PODGORANE-FUSHE, SUKE<br>PERMET, SHQIPERI</h5>
+        <img src="images/d-world_language_logo-removebg-preview.png" alt="logo" class="logo-fundi">
+        <h5>TEL: +355699953697<br>EMAIL: trebeshinahoney@gmail.com</h5>
+    </div>
+    <button class="scroll-to-top" onclick="scrollToTop()"> &#8593;</button>
+    <div class="fundi2">
+        <img src="images/natural.jpeg" alt="natural" class="imazh-natural">
+        <div class="rregulla">
+            <ul>
+                <li><a href="rregulla#pagesat"><b>PAGESAT</b></a></li>
+                <li><a href="rregulla#transporti"><b>TRANSPORT</b></a></li>
+                <li><a href="rregulla#rikthimi"><b>RIKTHIMI</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="vija-fundit">
+    <div class="fundi3">
+        <p class="copyright">COPYRIGHT © <span id="year"></span> | All right reserved Ferma Trebeshina </p>
+    </div>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('year').textContent = currentYear;
+    </script>
+    </div>
+    <script>
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
