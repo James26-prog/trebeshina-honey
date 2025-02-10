@@ -78,7 +78,7 @@ function closeMenu(event) {
     if (
         !hamburger.contains(event.target) && 
         !navMenu.contains(event.target) && 
-        !kontakt.contains(event.target) // Prevent closing if clicking inside kontakt
+        !kontakt.contains(event.target)
     ) {
         if (navMenu.classList.contains("active")) {
             hamburger.classList.remove("active");
@@ -87,12 +87,11 @@ function closeMenu(event) {
         }
     }
 }
-window.addEventListener("beforeunload", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-    kontakt.classList.remove("active");
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        window.location.reload(); 
+    }
 });
-
 hamburger.addEventListener("click", mobileMenu);
 document.addEventListener("click", closeMenu);
 document.addEventListener("touchstart", closeMenu);
