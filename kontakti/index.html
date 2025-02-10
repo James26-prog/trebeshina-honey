@@ -71,10 +71,17 @@ const navMenu = document.querySelector(".nav-menu");
 const kontakt = document.querySelector(".kontakt");
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
+    const isActive = hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     kontakt.classList.toggle("active");
+
+    if (isActive) {
+        sessionStorage.setItem("menuOpen", "true"); // Store menu state
+    } else {
+        sessionStorage.removeItem("menuOpen"); // Remove menu state
+    }
 }
+
 function closeMenu(event) {
     if (
         !hamburger.contains(event.target) && 
@@ -88,15 +95,6 @@ function closeMenu(event) {
         }
     }
 }
-window.addEventListener("pageshow", () => {
-    if (sessionStorage.getItem("menuOpen")) {
-        sessionStorage.removeItem("menuOpen"); // Clear state
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        kontakt.classList.remove("active");
-    }
-});
-
 hamburger.addEventListener("click", mobileMenu);
 document.addEventListener("click", closeMenu);
 document.addEventListener("touchstart", closeMenu);
