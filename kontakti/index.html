@@ -32,6 +32,12 @@
             }
         }
     </style>
+    <script>
+    if (sessionStorage.getItem("menuOpen")) {
+        sessionStorage.removeItem("menuOpen"); // Remove stored state
+        document.write("<style>.nav-menu, .kontakt { display: none !important; }</style>");
+    }
+    </script>
 </head>
 <body>
     <div class="qender">
@@ -88,11 +94,6 @@ function closeMenu(event) {
         }
     }
 }
-window.addEventListener("pageshow", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-    kontakt.classList.remove("active");
-});
 hamburger.addEventListener("click", mobileMenu);
 document.addEventListener("click", closeMenu);
 document.addEventListener("touchstart", closeMenu);
