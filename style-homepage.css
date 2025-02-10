@@ -374,24 +374,26 @@ h2.slogan {
     padding-bottom:30px;
 }
 .scroll-item:nth-child(2) img{
-    height:200px;
-    width:100px;
+    height:229px;
+    width:110px;
     padding-bottom:30px;
 }
 .scroll-item:nth-child(6) img{
-    height:200px;
-    width:100px;
+    height:229px;
+    width:110px;
     padding-bottom:30px;
 }
 .scroll-item:nth-child(3) img{
-    height:180px;
-    width:150px;
+    height:220px;
+    width:170px;
     padding-bottom:30px;
+    margin-top:9px;
 }
 .scroll-item:nth-child(7) img{
-    height:180px;
-    width:150px;
+    height:220px;
+    width:170px;
     padding-bottom:30px;
+    margin-top:9px;
 }
 .scroll-item:nth-child(4) img{
     width:170px;
