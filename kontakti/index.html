@@ -75,7 +75,6 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
     kontakt.classList.toggle("active");
 }
-
 function closeMenu(event) {
     if (
         !hamburger.contains(event.target) && 
@@ -89,6 +88,11 @@ function closeMenu(event) {
         }
     }
 }
+window.addEventListener("pageshow", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    kontakt.classList.remove("active");
+});
 hamburger.addEventListener("click", mobileMenu);
 document.addEventListener("click", closeMenu);
 document.addEventListener("touchstart", closeMenu);
