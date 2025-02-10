@@ -1338,7 +1338,7 @@ h2.slogan {
 }
 @media only screen and (max-width: 720px){
     .kontakti{
-        padding:40px 100px 0px 100px;
+        padding:60px 100px 20px 100px;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -1386,7 +1386,7 @@ h2.slogan {
         width:300px;
     }
     .kontakti{
-        padding:30px 100px 40px 100px;
+        padding:50px 100px 60px 100px;
     }
     .kontakt2{
         justify-content: center;
