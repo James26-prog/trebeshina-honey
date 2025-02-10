@@ -28,16 +28,10 @@
         }
         @media only screen and (max-width: 520px){
             .fundi1{
-                margin-top:-30px;
+                margin-top:-60px;
             }
         }
     </style>
-    <script>
-    if (sessionStorage.getItem("menuOpen")) {
-        sessionStorage.removeItem("menuOpen"); // Remove stored state
-        document.write("<style>.nav-menu, .kontakt { display: none !important; }</style>");
-    }
-    </script>
 </head>
 <body>
     <div class="qender">
@@ -94,6 +88,15 @@ function closeMenu(event) {
         }
     }
 }
+window.addEventListener("pageshow", () => {
+    if (sessionStorage.getItem("menuOpen")) {
+        sessionStorage.removeItem("menuOpen"); // Clear state
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        kontakt.classList.remove("active");
+    }
+});
+
 hamburger.addEventListener("click", mobileMenu);
 document.addEventListener("click", closeMenu);
 document.addEventListener("touchstart", closeMenu);
