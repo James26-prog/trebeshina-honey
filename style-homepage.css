@@ -1068,7 +1068,7 @@ h2.slogan {
     }
     /*produktet page*/
     .item1{
-        height:500px;
+        height:450px;
     }
     /*gallery page*/
     .galery {
@@ -1141,9 +1141,9 @@ h2.slogan {
         flex-direction: column;
     }
 }
-@media (min-width:2000px){
+@media (min-width:1700px){
     .item1{
-        width:1700px;
+        width:1450px;
     }
 }
 @media only screen and (max-width: 1200px) {
