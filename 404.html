@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Error | Trebeshina Honey</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="images/logo3.png" />
+    <link rel="stylesheet" href="style-homepage.css" />
+    <style>
+      .vendosja {
+        background: rgb(255, 255, 255);
+        padding: 40px 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100vh - 110px);
+      }
+      .vendosja h1 {
+        font-size: 100px;
+        margin: 0;
+        color: rgb(255, 255, 100);
+        -webkit-text-stroke: 1px black;
+      }
+      .vendosja h4 {
+        font-size: 20px;
+        margin: 20px 0;
+        color: #555;
+        text-align: center;
+      }
+      .vendosja a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #eb3232;
+        color: white;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      .vendosja a:hover {
+        background-color: #c70000;
+      }
+      .fundi1 {
+        margin-top: 0;
+      }
+      /* Responsive adjustments */
+      @media (max-width: 850px) {
+        .vendosja {
+          height: calc(100vh - 85px);
+        }
+      }
+      @media (max-width: 500px) {
+        .vendosja h1 {
+          font-size: 80px;
+        }
+        .vendosja h4 {
+          font-size: 18px;
+        }
+        .vendosja {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qender">
+      <div class="navbar">
+        <div class="logo">
+          <a href="">
+            <img
+              src="images/d-world_language_logo-removebg-preview.png"
+              alt="logo"
+              class="imazh-logo"
+          /></a>
+        </div>
+        <div class="nav">
+          <div class="kontakt">
+            <div class="cel">
+              <p><i class="fas fa-phone"></i>+355699953697</p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                <span>trebeshinahoney@gmail.com</span>
+              </p>
+            </div>
+            <div class="social">
+              <a
+                href="https://www.instagram.com/trebeshina_honey?utm_source=qr&igsh=MXNyc2lhcnEybHRuYQ=="
+                target="_blank"
+                ><i class="fab fa-instagram" style="color: black"></i
+              ></a>
+              <a href="https://wa.me/+355699953697" target="_blank"
+                ><i class="fab fa-whatsapp" style="color: black"></i
+              ></a>
+            </div>
+          </div>
+          <ul class="nav-menu">
+            <li>
+              <a href="historia/"><b>HISTORIA JONE</b></a>
+            </li>
+            <li>
+              <a href="produkte/"><b>PRODUKTET</b></a>
+            </li>
+            <li>
+              <a href="galeria/"><b>GALERIA</b></a>
+            </li>
+            <li>
+              <a href="kontakti/"><b>KONTAKTI</b></a>
+            </li>
+            <hr class="vije" />
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <div class="boshlek"></div>
+      </div>
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const kontakt = document.querySelector(".kontakt");
+        function mobileMenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+          kontakt.classList.toggle("active");
+        }
+        function closeMenu(event) {
+          if (
+            !hamburger.contains(event.target) &&
+            !navMenu.contains(event.target) &&
+            !kontakt.contains(event.target)
+          ) {
+            if (navMenu.classList.contains("active")) {
+              hamburger.classList.remove("active");
+              navMenu.classList.remove("active");
+              kontakt.classList.remove("active");
+            }
+          }
+        }
+        hamburger.addEventListener("click", mobileMenu);
+        document.addEventListener("click", closeMenu);
+        document.addEventListener("touchstart", closeMenu);
+      </script>
+    </div>
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 200;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+      window.addEventListener("DOMContentLoaded", reveal);
+      window.addEventListener("scroll", reveal);
+      window.addEventListener("resize", reveal);
+      window.addEventListener("orientationchange", function () {
+        setTimeout(reveal, 10);
+      });
+    </script>
+    <div class="qender">
+      <div class="vendosja">
+        <h1>404</h1>
+        <h4>Oops! The page you are looking for is not here.</h4>
+        <a href="index.html">Go back to Home Page</a>
+      </div>
+    </div>
+    <div class="qender">
+      <div class="fundi1">
+        <h5>
+          FERMA TREBESHINA,<br />PODGORANE-FUSHE, SUKE<br />PERMET, SHQIPERI
+        </h5>
+        <img
+          src="images/d-world_language_logo-removebg-preview.png"
+          alt="logo"
+          class="logo-fundi"
+        />
+        <h5>TEL: +355699953697<br />EMAIL: trebeshinahoney@gmail.com</h5>
+      </div>
+      <div class="fundi2">
+        <img src="images/natural.jpeg" alt="natural" class="imazh-natural" />
+        <div class="rregulla">
+          <ul>
+            <li>
+              <a href="rregulla#pagesat"><b>PAGESAT</b></a>
+            </li>
+            <li>
+              <a href="rregulla#transporti"><b>TRANSPORT</b></a>
+            </li>
+            <li>
+              <a href="rregulla#rikthimi"><b>RIKTHIMI</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="vija-fundit" />
+      <div class="fundi3">
+        <p class="copyright">
+          COPYRIGHT © <span id="year"></span> | All right reserved Ferma
+          Trebeshina
+        </p>
+      </div>
+      <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("year").textContent = currentYear;
+      </script>
+    </div>
+  </body>
+</html>
