@@ -70,20 +70,6 @@ hamburger.addEventListener("click", mobileMenu);
 document.addEventListener("click", closeMenu);
 document.addEventListener("touchstart", closeMenu);
 //document.addEventListener("scroll",closeMenu);
-document.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", (event) => {
-        // Close the menu
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        kontakt.classList.remove("active");
-
-        // Allow slight delay before navigation
-        setTimeout(() => {
-            window.location.href = link.href; // Redirect after closing menu
-        }, 100); 
-        event.preventDefault(); // Prevent default navigation to control timing
-    });
-});
     </script>
     <div class="background">
         <div class="img-backgroung reveal ">
