@@ -70,6 +70,11 @@ hamburger.addEventListener("click", mobileMenu);
 document.addEventListener("click", closeMenu);
 document.addEventListener("touchstart", closeMenu);
 //document.addEventListener("scroll",closeMenu);
+window.addEventListener("load", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    kontakt.classList.remove("active");
+});
     </script>
     <div class="background">
         <div class="img-backgroung reveal ">
