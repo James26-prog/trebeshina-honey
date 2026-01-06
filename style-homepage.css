@@ -1385,7 +1385,8 @@ h2.slogan {
         width:300px;
     }
     .kontakti{
-        padding:50px 100px 60px 100px;
+        height: 700px;
+        padding:50px 100px 50px 100px;
     }
     .kontakt2{
         justify-content: center;
@@ -1735,4 +1736,5 @@ h2.slogan {
         margin-top:-0.2em;
     }
 }
+
 
