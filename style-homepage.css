@@ -596,19 +596,22 @@ h2.slogan {
 .fundi1 {
     background-color: rgb(255, 255, 100);
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 35px;
     height: 150px;
     font-size: 20px;
     transition: font-size 0.3s ease;
     margin-top:-65px;
 }
 .logo-fundi {
-    width: 170px;
-    margin-top: -40px;
-    margin-left: 35px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 170px;
+   margin-top: -40px;
 }
 .fundi1 h5 {
     margin-top: 40px;
@@ -616,15 +619,7 @@ h2.slogan {
     font-size: 20px;
     transition: font-size 0.3s ease;
     font-weight: bold;
-}
-.fundi1 h5:nth-child(3){
-    padding: 0px;
-    padding-right: 25px;
-    padding-left:0px;
-}
-.fundi1 h5:nth-child(1){
-    padding-right:0px;
-    padding-left:45px;
+    text-align: left;
 }
 /* fundi i dyte rregullat per transportin/imazhin 100% natural */
 .fundi2 {
@@ -1161,11 +1156,6 @@ h2.slogan {
         padding: 10px;
         font-size: 15px;
     }
-    .logo-fundi {
-        width: 170px;
-        margin-top: -50px;
-        margin-left: 20px;
-    }
     .fundi1 {
         font-size: 18px;
     }
@@ -1314,16 +1304,17 @@ h2.slogan {
 @media only screen and (max-width:850px){
     .logo-fundi {
         width: 130px;
-        margin-top: -180px;
+        margin-top: 30px;
         margin-left: 0px;
         margin-bottom:20px;
     }
     .fundi1 h5:nth-child(1){
-        margin-top:100px;
+        margin-top:120px;
         padding-right:0px;
         padding-left:0px;
     }
     .fundi1 h5:nth-child(3){
+        margin-top: 0px;
         padding: 0px;
         padding-right: 0px;
         padding-left: 0px;
@@ -1744,3 +1735,4 @@ h2.slogan {
         margin-top:-0.2em;
     }
 }
+
