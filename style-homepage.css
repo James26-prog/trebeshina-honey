@@ -882,7 +882,7 @@ h2.slogan {
     .starti-foto{
         display:flex;
         flex-direction: column;
-        background-image: url(images/products-start.jpg);
+        background-image: url(images/products-start.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1736,5 +1736,6 @@ h2.slogan {
         margin-top:-0.2em;
     }
 }
+
 
 
