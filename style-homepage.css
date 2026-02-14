@@ -365,43 +365,25 @@ h2.slogan {
 .scroll-item-link p{
     font-size: 20px;
 }
-.scroll-item:nth-child(1) img{
-    width:170px;
-    padding-bottom:30px;
+.scroll-item:nth-child(1) img,
+.scroll-item:nth-child(2) img,
+.scroll-item:nth-child(5) img,
+.scroll-item:nth-child(6) img {
+  width: 170px;
+  padding-bottom: 30px;
 }
-.scroll-item:nth-child(5) img{
-    width:170px;
-    padding-bottom:30px;
+.scroll-item:nth-child(3) img,
+.scroll-item:nth-child(7) img {
+  height: 229px;
+  width: 110px;
+  padding-bottom: 30px;
 }
-.scroll-item:nth-child(2) img{
-    height:229px;
-    width:100px;
-    padding-bottom:30px;
-}
-.scroll-item:nth-child(6) img{
-    height:229px;
-    width:100px;
-    padding-bottom:30px;
-}
-.scroll-item:nth-child(3) img{
-    height:220px;
-    width:170px;
-    padding-bottom:30px;
-    margin-top:9px;
-}
-.scroll-item:nth-child(7) img{
-    height:220px;
-    width:170px;
-    padding-bottom:30px;
-    margin-top:9px;
-}
-.scroll-item:nth-child(4) img{
-    width:170px;
-    padding-bottom:10px;
-}
-.scroll-item:nth-child(8) img{
-    width:170px;
-    padding-bottom:10px;
+.scroll-item:nth-child(4) img,
+.scroll-item:nth-child(8) img {
+  height: 220px;
+  width: 170px;
+  padding-bottom: 30px;
+  margin-top: 9px;
 }
 .scroll-button {
     position: absolute;
@@ -1736,6 +1718,7 @@ h2.slogan {
         margin-top:-0.2em;
     }
 }
+
 
 
 
